@@ -1,0 +1,111 @@
+Requirement: 
+	- Elicited 
+	- Analyzed 
+	- Validated 
+		=> It should the co-presence of the person involved 
+requirement is the perform of the project 
+two types of requirement 
+	- Non-fonctional 
+	- Fonctional : 
+			- Web develop 
+			- Software 
+			=> Interaction between the systeme and it envirement 
+==>the requirement must have a clearly state of all the Non fonctional and fonctional requirement 
+	+ The requirement used for 
+		- To provide visual examples to clients 
+		- To buffer time for each activity 
+		-
+		-
+
+Different types of th requirement 
+- (BRD) : Business requirement => the business or the project goals (1st Step)
+		- Sponsor/client  Goals
+		- Scope of the project 
+		- Business objectif   
+- (FRD) : Functional requirement =>  fonctionality of the software detail (3rd step)
+- (MRD) : Market requirement => focus into the market needs (2nd step)
+- (PRD) : Product requirement => the same content of the FRD + the non-fonctional requirement (4th step)
+- (UIRD): it's about the interface requirement
+	  - also it content user requirement 
+		- User goal 
+		- User point of view 	
+		- User output and input  
+
+		+Requirement Gathering 
+
+		+ Crowdsourcing 
+- it s a group of people (non-technique) collaborated to complete a task in a project.
+- they work in the same time (parallel) and in a different place.
+- they have their own plateforme.
+- it s an outsourcing of activity.
+- they work only in a online platfore.
+
+		+Users 
+- they have the same condition as the crowdsourcing. 
+- they have their own platform .
+- they only send infomation to the server. 
+- they don t have the permission to update s.th. 
+
+		+Environment development 
+-they work on two types of platforms 
+	+ Online "online community" a part in touch with another such as buyer and seller, a collaborative work in the platform all the group work together in the same time.
+	+ Offline an indirect way to work.
+- exchange of the information between the server and the Env Dev.
+__________________________________________________________________________________________________________________________
+
+The complete app content 
+1) Requirement 
+2) test case 
+3) test plan 
+4) design specification 
+5) development task 
+6) time plan 
+7) relase plan 
+
+==> Before all the application should be finished from all the charges after that the 2nd step is the first validation, in this step some information will be ignored until the last validation, 3rd step is processus where the charges will be executed.
+
+ 
+__________________________________________________________________________________________________________________________
+
+Agile software 
+	=> 4 important values for agile software 
+		- Team 
+		- The application 
+		- Collaboration 
+		- Changement agree 
+
+Agile principles 
+	- Costumer satisfaction (satisfaction de client) 	
+	- Welcome changing requirement (accueillir les demandes de changement)
+	- Working software (livraison)
+	- Cooperation between buisiness people and developers (cooperation entre le client et l'équipe de projet)
+	- Motivation 
+	- Face to face conversation (pour bien comprendre les principes de projet) 
+	- Working the software in the principale mesure of progress (il faut que l'avancement de projet sera bien fait) 
+	- technical excellence and good design 
+	- Simplicity of the project 
+	- Empower of the team 
+ 
+__________________________________________________________________________________________________________________________
+Analyse In-Link :
+
+Analyse Out-Link: 
+ 
+__________________________________________________________________________________________________________________________
+
+=> Open-source software (OSS) is computer software with its source code made available with a license in which the copyright holder provides the rights to study, change, and distribute the software to anyone and for any purpose. Open-source software may be developed in a collaborative public manner. According to scientists who studied it, open-source software is a prominent example of open collaboration.
+
+=> Closed source or  Proprietary software is computer software for which the software's publisher or another person retains intellectual property rights—usually copyright of the source code
+__________________________________________________________________________________________________________________________
+
+translate
+-Investigation => enquête  
+___________________________________________________________________________________________________________________________
+-rights management.
+*introduction: (IRM) This technologie allow to protect senseitive information from unauthorized access 
+*Features : (IRM) typically have a number of features that allow an owner to control, manage and secure information from unwanted access.
+*permissions management: It allow the users to protect their files against unauthorized users, IRM users can apply certain access permissions that permit or deny a user from taking certain actions and informations.
+It also allows users to change or revoke access permissions without sharing the document again.
+ 
+-change management  
+

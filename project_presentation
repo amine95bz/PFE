@@ -1,0 +1,32 @@
+﻿1. Présentation générale de projet .
+
+	1.1. Objectif principale :
+ 
+	Le projet va être utiliser par les ingénieurs de l'entreprise pour coopérer a la gestion de cahier des charges.Il est écrit en plusieurs langages "NodeJS, HTML5, MySQL, Perl5 ...", le milieu cible de ce projet est LINUX. Le projet est utiliser dans une console (terminal, milieu préférer par les ingénieur) et aussi dans interface graphique pour les utilisateurs non-technique. La langue utilisé dans l’entreprise, et dans le projet, est l’Anglais. Une documentation pour l’utilisateur sera aussi développée.   
+
+	1.2. Nature :
+
+	Le projet consiste au développement d’interfaces spécifiques au type d’utilisateur.    A l’interfaçage avec une application de cahier des charge existante dans l'entreprise.       A l’amélioration de l’application existante.
+
+	1.3. Public visé : 
+
+	Le projet vise le public suivant:
+- Les ingénieurs de l'entreprise.  
+	+ Les ingénieurs utilisent un modèle de développement distribuer.
+- La direction des produits 
+- Le groupe marketing.
+	+ Groupe non-technique.
+- Les utilisateurs. 
+
+	1.4. Description de contenu : 
+
+- Collection des demandes des utilisateurs.
+- Développement des interfaces spécifique au type des utilisateurs. 
+- Analyse des applications de gestion de cahier des charges présente dans l'entreprise.
+- Étude du marché des applications de gestion de cahier des charges.
+- Analyse des méthodes utiliser pour le traitement de cahier des charges dans l'entreprise.
+- Étude des recherches relative au cahier des charges, particulièrement « Requirement Crowd Sourcing ».
+- Proposition pour amélioration pour l’application de gestion des charges.
+- Implémentation des propositions accepter par l’entreprise.
+- Test dans le cadre d’un projet existant contenant un grand nombre des charges.      
+
