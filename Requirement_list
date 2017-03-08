@@ -1,0 +1,103 @@
+ 
+the project has a TERMINAL interface
+ 
+the project has a graphical interface
+ 
+the two interfaces are synchronized 
+
+this program shows the requirement attributes and the requirement optional attributes 
+	UUID
+	TYPE
+	...
+
+the program shows the user the errors they have in their requirements 
+
+the program is an open source software 
+	available source code 
+
+Requirements are developed in a collaborative public manner 
+
+* to buffer time for each activity 
+
+in the graphical interface, if the user want to make a change, he can choose the attribute with a mouse click a window will open that allow him to change the value. the input value is validated 
+
+*Specific product  of the project 
+( focus in the important detail of the project 
+  make an interview to collect more idea ) 
+  
+
+the project has a user documentation 
+
+the project has an online help 
+
+* the project is useable 
+ 
+  
+a group of users can collaborate to create and manage requirements 
+	*example  
+
+users can work on a private copy of the requirement   
+
+users can work in a online platform  
+ 
+	 *list of non-technical users
+	
+non-technical users have the same condition as the crowdsourcing users except they work in a offline platform 
+	
+non-technical users don't have the permission to modify requirements directly 
+
+adminstrative users review and accept requirement changes suggested by non-technical users  
+
+ 
+developer can work in a online or offline platform 
+
+* developers environment
+ 
+
+online platform users can update the requirements  
+
+* online platform users can exchange the requirements on time    
+
+requirements attributes can be modified by clicking on them 
+
+opening a requirement takes less than 3 seconds   
+
+recording a requirement takes less than 2 seconds 
+
+**  
+ 
+*cooperation between business people and developers 
+
+*Requirements are developed in a collaborative public manner 
+
+version control system is used in the project 
+
+**(dessin uml dans le contexte de l utilisateur) the local and the distributed VCS used in the project 
+
+*Manage the process
+
+*manage the system
+
+*manage the organization structure
+
+*manage the job roles 
+
+*(how?) sharing the requirement list with the stakeholders 
+
+collaborate the work in the real time 
+
+make a branch for each individual work 
+
+-change management
+understanding the need of change 
+communicate with other stakeholders for more idea to avoid problems or to ameliorate the project 
+start thinking about the better way for the project 
+recommunicate with stakeholders about the decision 
+"investment"
+
+--Use case 
+   
+	
+ 
+
+

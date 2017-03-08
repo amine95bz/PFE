@@ -1,0 +1,32 @@
+
+		Project Overview.
+
+1.1. Main objective:
+ 
+	The project is going to be used by the engineers of the company to cooperate in the management of specifications. It is written in several languages "NodeJS, HTML5, MySQL, Perl5 ...", the target medium of this project is LINUX. The project is used in a console (terminal, middle prefered by the engineer) and also in graphical interface for non-technical users. The language used in the company, and in the project, is English. Documentation for the user will also be developed.
+
+1.2. Nature :
+
+	The project consists of the development of interfaces specific to the type of user. Interfacing with an application of existing specifications in the company. Improved the existing application.
+
+1.3. Targeted audience :
+
+	The project targets the following audience:
+	- Engineers of the company.
+		+ Engineers use a distributed development model.
+	- Product management
+	- The marketing group.
+		+ Non-technical group.
+	- The users.
+
+1.4. Content Description:
+
+	- Collection of user requests.
+	- Development of interfaces specific to the type of users.
+	- Analysis of the applications of management of specifications present in the company.
+	- Study of the market of applications of management of specifications.
+	- Analysis of the methods used for the processing of specifications in the company.
+	- Study of the research on the specifications, particularly "Requirement Crowd Sourcing".
+	- Proposal for improvement for the application of load management.
+	- Implementation of proposals accepted by the company.
+	- Test as part of an existing project containing a large number of loads.
