@@ -1,0 +1,162 @@
+requirement categories can be associated with user defined icons
+	icons are displayed in a category toolbox
+	icons can be drag dropped to set a category
+		on a single requirement
+		a set of requirements
+		requirements listed as a the result of an analysis
+
+reequirement category tool box
+	possibility to have multiple toolboxes
+
+	icons can be frag dropped between toolboxes
+		copy or move the icon
+
+	user can create a new category and assign an icon from the toolbox interface
+
+	setup of tool boxes is defined in text files
+
+	categories can be displayed in a tree, showing the category/sub category relationship
+
+requirement workspace
+	multiple workspaces are presented in the user interface
+
+	interface supports drag drop
+
+	a command line is available to the user
+
+	workspaces contain different types of elements
+		requirements template make
+		requirement view
+		categories
+		analysis results
+		repository
+		toolboxes
+			categories
+			commands
+			analysis
+			macros 
+			...
+
+	multiple elements are displayed simultaneously
+	
+	elements can be placed freely on the desktop
+	
+	elements can be displayed
+		full size
+		minimized
+		curtained
+		
+	toolboxes can be customized
+	
+	the same element can be displayed in multiple workspaces
+		changes are kept synchronized
+		elements can be displayed differently in each workspace
+		multiple views of the same element can be displayed simultaneously in the same desktop
+
+	desktops are saved across sessions
+	user setup is saved and can be imported in another instance of req-repo
+
+	possibility to import from other repositories
+		view definitions
+		user defined commands and analysis
+		filters
+		...
+
+user help
+	Online help
+		context sensitive help
+
+	documentation
+		online documentation available
+			can open in own desktop
+			can open as an element
+
+	remote support	
+		allow another user to share the same interface
+
+alarms
+	alarms are displayed to let the user know that
+		requirements have changed
+		repository has changed
+		result of an analysis has changed
+		
+requirement view
+	user can define view types
+	
+	a requirement can be displayed in different manner
+		EG: a view type may omit optional field
+		EG: a view type may be the result of an analysis
+		...
+		
+	'hooks' can be attached to views
+		EG: user can't close a view with missing information
+		
+	hooks are user defined
+	
+	view type can be changed for selected views
+
+	alternative views of the requirement can be created
+
+	
+composite requirement view
+	a view where multiple representation of the same requirements are displayed
+		EG: a requirement is displayed in the upper part of the view and a list of related requirements in the lower part. Requirements in the lower part of the view can be interacted with, EG: to open then in a view.
+
+		EG: top part is the requirement, middle part is a toolbox containing analysis types, lower part contains result of the last analysis.
+
+
+Requirement repository
+	creation
+	cloning from another repository
+	importing specific requirements from another repository				
+	
+element selection
+	single and multiple elements can be selected
+
+	multiple desktop can be selected
+
+	desktop remembers selected elements when desktop is not active
+
+
+action on currently selected elements
+	apply an action, EG: analyze requirements
+	
+	display results of action in a current desktop or in a new desktop
+	
+	
+Requirement format
+	requirements can be defined in multiple languages, EG: Perl, JSON, MD
+	
+	requirements can have different fields
+	
+	first line of requirement contains type or analysis on the requirement to detect the format
+
+requirement source
+	requirements displayed in the interface can come from different repositories
+
+	source information is available in the requirement element view
+		over to show source
+		different color for different sources
+		information window
+
+	requirements can be moved between sources
+	
+work of the week view
+	contains a view of the changes made to the repository	
+		last week
+		per user
+		...
+
+Any user can become a 'server' for a person without an installation
+	server can do firewall crossing
+	
+
+versionning of Re-Repo
+	how is it handled?
+
+	
+
+
+
+
+
