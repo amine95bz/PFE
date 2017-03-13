@@ -3,20 +3,34 @@ stakeholders :  intern : employees , owner , manager
 		stakeholder analysis, it is
 		claimed, can be used to analyse an organisation’s
 		performance and determine its future strategic direction
-PERT:
-atom: (atom.io)
-workshops:(document analysis)
-version control :
-workflows: 
-tasktop: 
-component:
-boundaries:
-compliance: 
+PERT:  Program evalution and review technique, is a static tool used for project management, designed to analyze and represent the tasks.
+
+PERT (fr): est une methode conventionnelle utilisable en gestion de projet
+
+atom: (atom.io), is a HTML text editor 
+
+workshops:(document analysis) a meeting at which a group of people engage in intensive discusion and activity on a particular subject or project. 
+
+workshops (fr): un atelier axé sur un theme de travail au sein d'un congré ou d'un salon professionel.
+
+workflows: Progression of steps (tasks, events, interactions) that comprise a work process, involve two or more persons, and create or add value to the organization's activities
+
+workflows (fr): On appelle workflow management (gestion du flux de travail) la modélisation et la gestion informatique de l'ensemble des tâches à accomplir et des différents acteurs impliqués dans la réalisation d'un processus métier
+ 
+tasktop: Software development lifecycle integration
+ 
+component: A part or element of a larger whole, especially a part of a machine
+
+boundaries: the limit of a subject or principle
+
+compliance: Act of obeying an order
+ 
 IDEs :integrate development envirment 
-observable
+
 TRS: technical requirement specification 
-Rbac
-distilled:
-business process 
-external interface 
+
+RBAC: Role Based Access Control, is an approach to restricting system access to authorized users
+
+business process: the development and control of processes used in a company, department, project ... . to make sure they are effective 
+
 
