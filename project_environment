@@ -328,4 +328,16 @@ collaboration
 
 _______________________________________________________________________________________________________________________
 
-web socket 	 
+Tests 
+
+*Reasons we need Softawre testing 
+
+- To ensure that what we create does what it s supposed to do 
+- To ensure that what we create does what the user whant 
+- to evode construction problems 
+- important to ensure the quality of the product 
+- important to ensure that the application should not result into any failure 
+- to ensure that the application responds correctly to all kinds of inputs 
+- to enure that the application is sufficiently usable 
+
+_______________________________________________________________________________________________________________________
