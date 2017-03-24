@@ -11,6 +11,8 @@ angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulato
         BoardManipulator.removeCardFromColumn(board, column, card);
       }
     },
+    
+    
 
     addNewCard: function (board, column) {
       var modalInstance = $uibModal.open({
@@ -23,11 +25,16 @@ angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulato
           }
         }
       });
+      
+      
+      
       modalInstance.result.then(function (cardDetails) {
         if (cardDetails) {
           BoardManipulator.addCardToColumn(board, cardDetails.column, cardDetails.title, cardDetails.details);
         }
       });
+      
+      
     },
     kanbanBoard: function (board) {
       var kanbanBoard = new Board(board.name, board.numberOfColumns);
@@ -39,11 +46,15 @@ angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulato
       });
       return kanbanBoard;
     },
+    
+    
     sprintBoard: function (board) {
       var sprintBoard = new Board(board.name, board.numberOfColumns);
       angular.forEach(board.columns, function (column) {
         BoardManipulator.addColumn(sprintBoard, column.name);
       });
+      
+      
       angular.forEach(board.backlogs, function (backlog) {
         BoardManipulator.addBacklog(sprintBoard, backlog.title);
         angular.forEach(backlog.phases, function (phase) {
@@ -56,5 +67,7 @@ angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulato
       });
       return sprintBoard;
     }
+    
+    
   };
 }]);

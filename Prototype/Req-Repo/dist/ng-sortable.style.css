@@ -1,3 +1,6 @@
+/*les champs des views*/
+
+
 /* ******************************************* */
 /* Optional CSS, default style for ng-sortable */
 /* ******************************************* */
@@ -10,7 +13,7 @@
 
 .as-sortable-item {
     border: solid 1px darkgrey;
-    background-color: #ffffff;
+    background-color: #FFF;
 }
 
 .as-sortable-item-handle {

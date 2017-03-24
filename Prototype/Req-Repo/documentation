@@ -29,6 +29,6 @@ Installation:
 Commands to run:
 	$ grunt build (builds the source and generates the min files in dist).
 	$ grunt serve (runs a local web server on node.js).
-	$grunt test (runs the tests).
-	$grunt test:continuous (ens to ens test). 
+	$ grunt test (runs the tests).
+	$ grunt test:continuous (ens to ens test). 
 	
