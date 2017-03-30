@@ -1,8 +1,9 @@
 stakeholders :  intern : employees , owner , manager 
-	        extern : government , society , creditor 
+		extern : government , society , creditor 
 		stakeholder analysis, it is
 		claimed, can be used to analyse an organisation’s
 		performance and determine its future strategic direction
+
 PERT:  Program evalution and review technique, is a static tool used for project management, designed to analyze and represent the tasks.
 
 PERT (fr): est une methode conventionnelle utilisable en gestion de projet
@@ -37,4 +38,4 @@ NVRAM: non-volatile random access memory
 
 vSphere: virtual server
 
-
+optical drive: piece of computer hardware
