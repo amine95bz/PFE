@@ -1,52 +1,29 @@
 
-ng-sortable
+Req-Repo
 ==============
 
-Angular Library for Drag and Drop, supports Sortable and Draggable. No JQuery UI used. Supports Touch devices.
+
 
 #### Release:
 
-Latest release version 1.3.6
+Latest release version 1.0.0
 
-`The Angular2 version of this Library is coming soon..`
+`The full version of Req-Repo is comming soon`
 
-#### Demo Page:
+#### Application
 
-[Simple] (http://a5hik.github.io/ng-sortable/#/kanban)
+https://github.com/amine95bz/PFE
 
-[Advanced] (http://a5hik.github.io/ng-sortable/#/sprint)
-
-Demo Includes:
+Prototype Includes:
 
 - Drag between adjacent Lists.
 - Control Drag on Specific Destinations.
 
-#### Features:
-
-- Drag both Horizontally and Vertically.
-- Drag and Drop items within a column.
-- Drag and Drop items across columns.
-- Can do Ranking by Sorting and Change Status by Moving.
-- Hooks provided to invoke API's after a particular action.
-- Preventing/Allowing Drop Zone can be determined at run time.
-- Enable/Disable Drag at run time.
-- Drag Boundary can be defined.
-- Clone an item and drop.
-- Allows duplicate items to be dropped from the clones.
 
 #### Implementation Details:
 
-- Uses angular/native JS for sortable and draggable. no JQueryUI used.
+- Uses angular/native JS for sortable and draggable.
 - Provides callbacks for drag/drop events.
-- Implementation follows Prototypical scope inheritance.
-
-#### Directives structure:
-
-The directives are structured like below.
-
-    as-sortable                     --> Items list
-      as-sortable-item              --> Item to sort/drag
-        as-sortable-item-handle     --> Drag Handle
 
 #### Design details:
 
