@@ -1,3 +1,115 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100%;
+}
+
+.hamburger-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+
+.hamburger-label {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: #444;
+  cursor: pointer;
+}
+
+.hamburger-checkbox:checked ~ .hamburger-label:before {
+  content: '\f00d';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 42px;
+  height: 42px;
+  font: 42px/42px fontawesome;
+  text-align: center;
+  color: #eee;
+}
+
+.content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 64px 32px;
+  background: #eee;
+  color: #444;
+  box-shadow: 0 0 5px black;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+
+.sidebar {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+  background: #444;
+  color: #eee;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+
+.hamburger-checkbox:checked ~ .sidebar {
+  width: auto;
+  height: auto;
+  padding-top: 6.5em;
+}
+
+.menu {
+  list-style: none;
+}
+.menu li {
+  padding: 16px 32px;
+  border-top: 1px solid #2b2b2b;
+}
+.menu li:last-child {
+  border-bottom: 1px solid #2b2b2b;
+}
+
+/* Decorative styles unrelated to the demo */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+  margin: 32px 0;
+  font-weight: 300;
+  font-size: 200%;
+}
+
+p {
+  margin: 0 0 16px 0;
+}
+
+a {
+  color: #39b54a;
+}
 
 
 

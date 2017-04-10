@@ -94,14 +94,8 @@ module.exports = function (grunt) {
             '<%= cfg.demoDir %>/**/*.js',
             '!<%= cfg.demoDir %>/bower_components/**/*'
           ]
-          
         }
       }
-    }
-    demo: {
-        files: {
-            src: ['home.html']
-        } 
     },
 
     // concat

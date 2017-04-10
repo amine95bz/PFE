@@ -3,73 +3,17 @@
 <form ng-submit="addNewCard()" class="noMargin" name="newCardForm">
     <div class="modal-header">
         <button type="button" class="close" ng-click="close()">&times;</button>
-        <h4 class="modal-title" ng-model="columnName">Add New Requirement in '{{columnName}}'</h4>
+        <h4 class="modal-title" ng-model="columnName">Add New Card in '{{columnName}}'</h4>
     </div>
     <div class="modal-body">
         <div class="form-group">
-        	<div>
-        	<label class="control-label">UID</label>
-        	  	<div>
-            		<input type="text" maxlength="8" id="UID" placeholder="Requirement UID" focus-me class="cardInputs form-control"/>
-              	</div>
-        	</div>
-        	<div>
-        	<label class="control-label">Type</label>
-        	  	<div>
-            		<input type="text" maxlength="35" id="Type" placeholder="Requirement Type" focus-me class="cardInputs form-control"/>
-              	</div>
-        	</div>
-        	<div>
-        	<label class="control-label">Creators</label>
-        	  	<div>
-            		<input type="text" maxlength="40" id="Creators" placeholder="Requirement Creators" focus-me class="cardInputs form-control"/>
-              	</div>
-        	</div>
-        	<div>
-        	<label class="control-label">Categories</label>
-        	  	<div>
-            		<input type="text" id="Categories" placeholder="Requirement Categories" focus-me class="cardInputs form-control"/>
-              	</div>
-        	</div>
-        	<div>
-            <label class="control-label">Name</label>
+            <label class="control-label" for="newCardTitle">Card title</label>
+
             <div>
-                <input type="text" id="newCardTitle" placeholder="Requirement Name" ng-model="Name" required
+                <input type="text" id="newCardTitle" placeholder="Title on a card" ng-model="title" required
                        focus-me class="cardInputs form-control"/>
             </div>
         </div>
-        <div> 
-        <label class="control-label">Description</label>
-        	  	<div>
-            		<textarea id="Des" placeholder="Requirement Description" focus-me class="cardInputs form-control" rows="2" /></textarea> 
-              	</div>
-        	</div>
-
- <div> 
-        <label class="control-label"> Long Description</label>
-        	  	<div>
-            		<textarea id="Ldes" placeholder="Requirement Long Description" focus-me class="cardInputs form-control" rows="4" /></textarea> 
-              	</div>
-        	</div>
-
-            <div>
-            <label class="control-label">Rational</label>
-            <div>
-                <input type="text" id="Rational" placeholder="Requirement Rational" ng-model="Name" required
-                       focus-me class="cardInputs form-control"/>
-            </div>
-        </div>
-
-
-        <div>
-            <label class="control-label">Fit criteria</label>
-            <div>
-                <input type="text" id="Fitc" placeholder="Requirement Fit criteria" ng-model="Name" required
-                       focus-me class="cardInputs form-control"/>
-            </div>
-        </div>
-
-
         <div class="form-group">
             <label class="control-label" for="newCardDetails">More details
                 <small>(optional)</small>

@@ -32,3 +32,9 @@ Commands to run:
 	$ grunt test (runs the tests).
 	$ grunt test:continuous (ens to ens test). 
 	
+Menu 
+     Flexbox allows the content area to resize to fit the remaining 
+     space in the viewport when the menu becomes visible and takes up
+     a chunk of the width.
+
+	

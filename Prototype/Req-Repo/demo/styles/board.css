@@ -1,4 +1,4 @@
-#board { margin: 0; padding: 20px 10px 10px 10px;}
+#board { margin: 0; padding: 0 10px 0 10px;}
 
 .board-header >ul>li> a {
     border-radius: 4px !important;
