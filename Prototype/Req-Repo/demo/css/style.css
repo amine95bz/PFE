@@ -57,10 +57,10 @@ html, body {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 64px 32px;
-  background: #eee;
+  padding: 64px 40px;
+  background: #fff;
   color: #444;
-  box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px white;
   -webkit-transition: all .3s;
           transition: all .3s;
 }
