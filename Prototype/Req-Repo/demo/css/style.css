@@ -1,5 +1,43 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:300");
 @import url("http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+
+
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	position: relative;
+	padding: 10px 40px;
+  margin: 0px 10px 10px 10px;
+  float: left;
+	border-radius: 10px;
+	font-family: 'Pacifico', cursive;
+	font-size: 20px;
+	color: #848484;
+	text-decoration: none;	
+}
+
+.blue
+{
+	background-color: #444;
+	border-bottom: 5px solid #444;
+	text-shadow: 0px -2px #444;
+}
+
+
+
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -81,16 +119,7 @@ html, body {
   padding-top: 6.5em;
 }
 
-.menu {
-  list-style: none;
-}
-.menu li {
-  padding: 16px 32px;
-  border-top: 1px solid #2b2b2b;
-}
-.menu li:last-child {
-  border-bottom: 1px solid #2b2b2b;
-}
+
 
 /* Decorative styles unrelated to the demo */
 body {
