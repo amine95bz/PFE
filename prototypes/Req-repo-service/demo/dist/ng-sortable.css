@@ -1,7 +1,3 @@
-/* ************************************** */
-/* Mandatory CSS required for ng-sortable */
-/* ************************************** */
-
 .as-sortable-item, .as-sortable-placeholder {
     display: block;
 }

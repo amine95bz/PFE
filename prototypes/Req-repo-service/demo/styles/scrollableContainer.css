@@ -1,4 +1,3 @@
-/* Put your css in here */
 .sortable-item,
 .sortable-placeholder {
     display: inline-block;
@@ -6,14 +5,6 @@
     height: 110px;
     float: left;
 }
-
-/*.sortable-row:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}*/
 
 #scrollable-container {
     position: absolute;

@@ -1,6 +1,3 @@
-/*jshint undef: false, unused: false, indent: 2*/
-/*global angular: false */
-
 'use strict';
 
 angular.module('demoApp').controller('KanbanController', ['$scope', 'BoardService', 'BoardDataFactory', function ($scope, BoardService, BoardDataFactory) {
@@ -9,10 +6,6 @@ angular.module('demoApp').controller('KanbanController', ['$scope', 'BoardServic
 
   $scope.kanbanSortOptions = {
 
-    //restrict move across columns. move only within column.
-    /*accept: function (sourceItemHandleScope, destSortableScope) {
-     return sourceItemHandleScope.itemScope.sortableScope.$id === destSortableScope.$id;
-     },*/
     itemMoved: function (event) {
       event.source.itemScope.modelValue.status = event.dest.sortableScope.$parent.column.name;
     },

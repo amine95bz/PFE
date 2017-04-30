@@ -1,6 +1,3 @@
-/*jshint undef: false, unused: false, indent: 2*/
-/*global angular: false */
-
 'use strict';
 
 angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulator', function ($uibModal, BoardManipulator) {
@@ -11,6 +8,12 @@ angular.module('demoApp').service('BoardService', ['$uibModal', 'BoardManipulato
         BoardManipulator.removeCardFromColumn(board, column, card);
       }
     },
+    
+ /*   removeColumn: function (board, column) {
+        if (confirm('Are you sure to Delete this view?')) {
+            BoardManipulator.removeColumn(board, column);
+        }
+    }, */
 
     addNewCard: function (board, column) {
       var modalInstance = $uibModal.open({

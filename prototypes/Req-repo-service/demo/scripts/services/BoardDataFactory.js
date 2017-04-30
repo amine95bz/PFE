@@ -1,6 +1,3 @@
-/*jshint undef: false, unused: false, indent: 2*/
-/*global angular: false */
-
 'use strict';
 
 angular.module('demoApp').service('BoardDataFactory', function () {
@@ -10,29 +7,30 @@ angular.module('demoApp').service('BoardDataFactory', function () {
       "name": "Kanban Board",
       "numberOfColumns": 4,
       "columns": [
-        {"name": "Ideas", "cards": [
+        {"name": "Group Ideas", "cards": [
           {"title": "Come up with a POC for new Project"},
           {"title": "Design new framework for reporting module"}
         ]},
-        {"name": "Not started", "cards": [
+        {"name": "Group not started", "cards": [
           {"title": "Explore new IDE for Development",
             "details": "Testing Card Details"},
           {"title": "Get new resource for new Project",
             "details": "Testing Card Details"}
         ]},
-        {"name": "In progress", "cards": [
+        {"name": "Group in progress", "cards": [
           {"title": "Develop ui for tracker module",
             "details": "Testing Card Details"},
           {"title": "Develop backend for plan module",
             "details": "Testing Card Details"}
         ]},
-        {"name": "Done", "cards": [
-          {"title": "Test user module",
+        {"name": "Group done", "cards": [        
+            
+         {"title": "Test user module",
             "details": "Testing Card Details"},
           {"title": "End to End Testing for user group module",
             "details": "Testing Card Details"},
           {"title": "CI for user module",
-            "details": "Testing Card Details"}
+            "details": "Testing Card Details"} 
         ]}
       ]
     },
@@ -40,9 +38,9 @@ angular.module('demoApp').service('BoardDataFactory', function () {
       "name": "Sprint Board",
       "numberOfColumns": 3,
       "columns": [
-        {"name": "Not started"},
-        {"name": "In progress"},
-        {"name": "Done"}
+        {"name": "Group not started"},
+        {"name": "Group in progress"},
+        {"name": "Group done"}
       ],
       "backlogs": [
         {"title": "Come up with a POC for new Project",
