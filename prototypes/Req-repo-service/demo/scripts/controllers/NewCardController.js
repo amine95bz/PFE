@@ -5,7 +5,9 @@ angular.module('demoApp').controller('NewCardController', ['$scope', '$uibModalI
   function initScope(scope) {
     scope.columnName = column.name;
     scope.column = column;
-    scope.uid = '';
+    scope.title = '';
+    scope.details = '';
+   /* scope.uid = '';
     scope.type = '';
     scope.abslvl = '';
     scope.origins = '';
@@ -23,14 +25,14 @@ angular.module('demoApp').controller('NewCardController', ['$scope', '$uibModalI
     scope.subreq = '';
     scope.reviewed = '';
     scope.impstate = '';
-    scope.imppriority = '';
+    scope.imppriority = '';*/
   }
 
   $scope.addNewCard = function () {
     if (!this.newCardForm.$valid) {
       return false;
     }
-    $uibModalInstance.close({uid: this.uid, column: column, type: this.type, abslvl: this.abslvl, origins: this.origins, creators: this.creators, categories: this.categories name: this.name, description: this.description, longdes: this.longdes, rational: this.rational, fitcri: this.fitcri, satis: this.satis, dissat: this.dissat, doclinks: this.doclinks, relatedreq: this.relatedreq, subreq: this.subreq, reviewed: this.reviewed, impstate: this.impstate, imppriority: this.imppriority});
+    $uibModalInstance.close({title: this.title, column: column, details: this.details,/* type: this.type, abslvl: this.abslvl, origins: this.origins, creators: this.creators, categories: this.categories name: this.name, description: this.description, longdes: this.longdes, rational: this.rational, fitcri: this.fitcri, satis: this.satis, dissat: this.dissat, doclinks: this.doclinks, relatedreq: this.relatedreq, subreq: this.subreq, reviewed: this.reviewed, impstate: this.impstate, imppriority: this.imppriority */});
   };
 
   $scope.close = function () {
@@ -40,4 +42,5 @@ angular.module('demoApp').controller('NewCardController', ['$scope', '$uibModalI
   initScope($scope);
 
 }]);
+
 

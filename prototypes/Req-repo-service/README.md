@@ -1,32 +1,67 @@
 
-Req-Repo
+ng-sortable
 ==============
 
-Angular Library for Drag and Drop, supports Sortable and Draggable.
+Angular Library for Drag and Drop, supports Sortable and Draggable. No JQuery UI used. Supports Touch devices.
+
+#### Release:
+
+Latest release version 1.3.8
+
+`The Angular2 version of this Library is coming soon..`
+
+#### Demo Page:
+
+[Simple] (http://a5hik.github.io/ng-sortable/#/kanban)
+
+[Advanced] (http://a5hik.github.io/ng-sortable/#/sprint)
+
+Demo Includes:
+
+- Drag between adjacent Lists.
+- Control Drag on Specific Destinations.
 
 #### Features:
 
-- Connect to the application interface.
-- Contact Req-Repo admin.
-- Online help.
-- Read about Req-Repo.
-- Req-Repo services:
-    - Drag both Horizontally and Vertically.
-    - Drag and Drop requirements within a column.
-    - Drag and Drop requirements across columns.
-    - Can do Ranking by Sorting and Change Status by Moving.
-    - Enable/Disable Drag at run time.
-    - Drag Boundary can be defined.
-    - Allows duplicate requirements to be dropped from the clones.
+- Drag both Horizontally and Vertically.
+- Drag and Drop items within a column.
+- Drag and Drop items across columns.
+- Can do Ranking by Sorting and Change Status by Moving.
+- Hooks provided to invoke API's after a particular action.
+- Preventing/Allowing Drop Zone can be determined at run time.
+- Enable/Disable Drag at run time.
+- Drag Boundary can be defined.
+- Clone an item and drop.
+- Allows duplicate items to be dropped from the clones.
 
 #### Implementation Details:
 
-- Uses angular/native JS for sortable and draggable.
+- Uses angular/native JS for sortable and draggable. no JQueryUI used.
 - Provides callbacks for drag/drop events.
+- Implementation follows Prototypical scope inheritance.
+
+#### Directives structure:
+
+The directives are structured like below.
+
+    as-sortable                     --> Items list
+      as-sortable-item              --> Item to sort/drag
+        as-sortable-item-handle     --> Drag Handle
 
 #### Design details:
 
-soon
+- ng-model is used to bind the sortable list items with the sortable element.
+- as-sortable can be added to the root element.
+- as-sortable-item can be added in item element, and follows ng-repeat.
+- as-sortable-item-handle can be added to the drag handle in item element.
+- All as-sortable, ng-model, as-sortable-item and as-sortable-item-handle are required.
+- the 'no-drag' attribute can be added to an element to prevent dragging inside as-sortable-item-handle.
+  allows you to perform the element specific event but prevent the element being dragged.
+- the drag item handle can listen for custom events as well.
+- Added a Jquery like 'containment' option to the sortable to prevent the drag outside specified bounds.
+- 'containerPositioning' option may be set to 'relative' to accommodate relative positioning on the container or its ancestry. Use this if the draggable item is offset from the mouse cursor while dragging. A common scenario for this is when using bootstrap columns.
+- The 'is-disabled' attribute can be added optionally to as-sortable disable the Drag at runTime.
+- Added a `longTouch` option to the sortable, setting to `true` will cause the drag and drop functionality to get activated upon `long-touch` aka `touch-and-hold` on touch devices. This maintains the native scroll by dragging functionality on touch devices. Default is set to `false`.
 
 #### Placeholder:
 - By default a placeholder element is created using the same tag as the as-sortable-item element
@@ -60,8 +95,7 @@ e.g.
 
 Following callbacks are defined, and should be overridden to perform custom logic.
 
-- callbacks.accept = function (sourceItemHandleScope, destSortableScope, destItemScope) {};
--> used to determine drag zone is allowed are not.
+- callbacks.accept = function (sourceItemHandleScope, destSortableScope, destItemScope) {}; //used to determine drag zone is allowed are not.
 
 ###### Parameters:
      sourceItemScope - the scope of the item being dragged.
@@ -196,6 +230,17 @@ The move failure Impl here just reverts the moved item to its original location.
           };
     }
 
+
+##### Horizontal Sorting:
+
+Horizontal Drag and Drop can be achieved using the same Library. The Column display can be tweaked to have horizontal items and the same can be achieved via some CSS tweaks (like making the column display style to "inline-block"). Added a sample in the demo source (refer plunker.css/js/html).
+
+Plunkr example link: http://a5hik.github.io/ng-sortable/#/horizontal
+
+##### Scroll page after reaching end of visible area.
+
+Implement dragMove callback and follow https://github.com/a5hik/ng-sortable/issues/13#issuecomment-120388981
+
 ##### Enable/Disable Drag at Runtime:
 
 The Drag can be controlled at runtime and you can enable/disable it by setting the "is-disabled" property to a boolean value of either true or false.
@@ -204,15 +249,15 @@ The Drag can be controlled at runtime and you can enable/disable it by setting t
 
 ##### Testing:
 
-- Tested on FireFox, Chromium and Safari.
-
+- Tested on FireFox, IE 9 and Greater, Chrome and Safari.
+- Ipad, Iphone and Android devices.
 
 ##### Development Environment setup:
 
 Clone the master 
-    $ git clone https://github.com/amine95bz/PFE/tree/master/Prototype/req-repo
+    $ git clone https://github.com/a5hik/ng-sortable.git
 
-or Download from [Source Master](https://github.com/amine95bz/PFE.git)
+or Download from [Source Master](https://github.com/a5hik/ng-sortable/archive/master.zip)
 
 ##### Installation:
 
@@ -228,16 +273,21 @@ Run the following commands from the project root directory.
     $ bower install
 
 ##### Commands to run:
-    $ grunt build - (builds the source.)
-    $ grunt serve - (runs a local web server.)
-    $ grunt test -  (runs the tests.)
-    $ grunt test:continuous - (end to end test.)
+    $ grunt build - builds the source and generates the min files in dist.
+    $ grunt serve - runs a local web server on node.js
+    $ grunt test - runs the tests (WIP).
+    $ grunt test:continuous - end to end test (WIP).
 
 To access the local server, enter the following URL into your web browser:
 
     http://localhost:9009/demo/
     
+##### NG Modules Link:
+
+If you use this module you can give it a thumbs up at [http://ngmodules.org/modules/ng-sortable](http://ngmodules.org/modules/ng-sortable).
+
+For Bug report, and feature request File an Issue here: [issue](https://github.com/a5hik/ng-sortable/issues).
 
 ##### License
 
-see [LICENSE](./LICENSE).
+MIT, see [LICENSE](./LICENSE).
