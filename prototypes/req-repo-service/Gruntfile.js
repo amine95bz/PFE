@@ -1,5 +1,3 @@
-/*jshint undef: false, unused: false, indent: 2*/
-
 module.exports = function (grunt) {
   'use strict';
   // load all grunt tasks automatically

@@ -1,4 +1,4 @@
-<form ng-submit="addNewCard()" name="newCardForm">
+<form ng-submit="addNewCard()" name="newCardForm" class="resizable" draggable="true">
     <div class="modal-header">
         <button type="button" class="close" ng-click="close()">&times;</button>
         <h4 class="modal-title" ng-model="columnName">Add New Reqirement in '{{columnName}}'</h4>
@@ -7,11 +7,23 @@
     td {
         font-size: 10px; 
     }
+
     .champ{
+    	border: 1px solid #A4A4A4;
         border-radius: 5px ;
         width:300px;
-        
     }
+
+    [draggable=true] {
+    cursor: move;
+	}
+
+	.resizable {
+    overflow: scroll;
+    resize: both;
+    max-width: 4600px;
+    max-height: 4600px;
+	}
     </style>
     <div class="modal-body">
 
@@ -103,7 +115,7 @@
 
         </td>
         <td>
-                <input type="text" id="newCardTitle" placeholder="Title on a card" ng-model="title" required
+                <input type="text" id="newCardTitle" placeholder="Requirement Name" ng-model="title" required
                        focus-me class="champ"/>
         </td>
         </tr>
@@ -116,7 +128,7 @@
 
             </td>
             <td>
-                <textarea id="newCardDescription" ng-model="description" class="champ" rows="1">
+                <textarea id="newCardDescription" ng-model="description" class="champ" rows="1" placeholder="Requirement Description">
                 </textarea>
             </td>
             </tr>
@@ -129,7 +141,7 @@
         </td>
         <td>
             
-                <textarea id="newCardLdescription" ng-model="Ldescription" class="champ" rows="1">
+                <textarea id="newCardLdescription" ng-model="Ldescription" class="champ" rows="1" placeholder="Requirement Long Description">
                 </textarea>
         </td>
         </tr>
@@ -219,7 +231,7 @@
 
         </td>
         <td>
-                <textarea id="newCardLdescription" ng-model="SubReq" class="champ" rows="1">
+                <textarea id="newCardLdescription" ng-model="SubReq" class="champ" rows="1" placeholder="Sub Requirements">
                 </textarea>
         </td>
         </tr>
