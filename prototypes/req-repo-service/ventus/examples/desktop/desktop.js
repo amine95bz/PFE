@@ -1,7 +1,4 @@
-/**
- * Ventus example
- * Copyright © 2012 Ramón Lamana
- */
+
 (function($, Ventus) {
 	document.addEventListener('DOMContentLoaded', function() {
 		var wm = new Ventus.WindowManager();
@@ -36,6 +33,13 @@
 			}, 300);
 		});
 
+		var reqWin = wm.createWindow.fromQuery('.req-app', {
+			title: 'Req',
+			width: 330,
+			height: 400,
+			x: 335,
+			y: 30
+		});
 
 		var todoWin = wm.createWindow.fromQuery('.todo-app', {
 			title: 'Todo',
@@ -85,6 +89,8 @@
 				openWithDelay(todoWin, 200);
 				openWithDelay(aboutWin, 400);
 				openWithDelay(playerWin, 600);
+				openWithDelay(reqWin, 100);
+
 			});
 		}
 
@@ -104,7 +110,7 @@
 			} else {
 				init();
 			}
-		}, 3000);
+		}, 300);
 
 
 		// Exposé test button

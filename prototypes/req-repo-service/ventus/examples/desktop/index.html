@@ -36,6 +36,17 @@
         <div class="apps" style="display:none" unselectable="on">
             <!-- TodoMVC App example with Backbone -->
 
+            <div class="req-app">
+                <header class="req-app-header">
+                    <input class="req-app-new" placeholder="What needs to be done?" autofocus>
+                </header>
+                <section class="req-app-main">
+                    <input class="req-app-toggle-all" type="checkbox">
+                    <!--<label for="toggle-all">Mark all as complete</label>-->
+                    <ul class="req-list"></ul>
+                </section>
+            </div>
+
             <div class="todo-app">
                 <header class="todo-app-header">
                     <input class="todo-app-new" placeholder="What needs to be done?" autofocus>
@@ -118,6 +129,7 @@
         <script type="text/javascript" src="../../vendor/handlebars.js"></script>
         <script type="text/javascript" src="../../dist/ventus.js"></script>
         <script type="text/javascript" data-main="todo/main.js" src="../../vendor/require.js"></script>
+        <script type="text/javascript" data-main="req/main.js" src="../../vendor/require.js"></script>
 
         <script type="text/javascript" src="desktop.js"></script>
 
