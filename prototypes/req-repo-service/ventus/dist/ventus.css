@@ -47,8 +47,36 @@
   display: none;
 }
 
-/* Wobbly animation */
-/
+/* Wobbly animation 
+@-webkit-keyframes wobbly {
+  0% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+@keyframes wobbly {
+  0% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+  50% {
+    -webkit-transform: rotate(-4deg);
+            transform: rotate(-4deg);
+  }
+  100% {
+    -webkit-transform: rotate(4deg);
+            transform: rotate(4deg);
+  }
+}
+Appear animation */
 @-webkit-keyframes appear {
   0% {
     -webkit-transform: scale(0, 0);
@@ -191,7 +219,7 @@
   padding: 0;
   padding-left: 8px;
   margin: 0;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   color: #fff;
 }
@@ -213,7 +241,7 @@
   border: 0;
   background-repeat: no-repeat;
   background-color: #365d98;
-  color: #FFFFFF;
+  color: #000;
   margin: 0;
   margin-left: 3px;
   padding: 0;
@@ -322,10 +350,10 @@
   -webkit-animation: appear 0.4s 1 ease-out forwards;
           animation: appear 0.4s 1 ease-out forwards;
 }
-.wm-window.resizing {
+/*.wm-window.resizing {
   -webkit-transition: none;
           transition: none;
-}
+}*/
 .wm-window.move {
   -webkit-animation: wobbly 0.5s 0.2s infinite;
           animation: wobbly 0.5s 0.2s infinite;
