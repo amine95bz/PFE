@@ -1,8 +1,3 @@
-/*!
- * Ventus 0.2.1
- * Copyright © 2015 Ramón Lamana
- * http://www.rlamana.com
- */
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) { // AMD.
         define(['$'], factory);

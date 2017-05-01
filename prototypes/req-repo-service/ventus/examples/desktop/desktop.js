@@ -9,10 +9,10 @@
 		var terminalWin = wm.createWindow.fromQuery('.terminal-app', {
 			title: 'Terminal',
 			classname: 'terminal-window',
-			width: 600,
+			width: 550,
 			height: 300,
 			x: 50,
-			y: 60
+			y: 40
 		});
 
 		terminalWin.signals.on('click', function(win){
@@ -22,7 +22,7 @@
 		var terminal = new Terminus('.terminal-app', {
 			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminus.js</h1> ' +
 				Terminus.version +
-				'</div>Copyright 2012-2013 Ramón Lamana.<br/>' +
+				'</div>Copyright Req-Repo 2017, M<sup>ed</sup> Amine Bouzid.<br/>' +
 				'Press <span style="color:green">&lt; tab &gt;</span> to see a list of available commands.'
 		});
 		terminal.shell.include([TestCommands, ShapeCommands]);
@@ -33,20 +33,13 @@
 			}, 300);
 		});
 
-		var reqWin = wm.createWindow.fromQuery('.req-app', {
-			title: 'Req',
-			width: 330,
-			height: 400,
-			x: 335,
-			y: 30
-		});
 
 		var todoWin = wm.createWindow.fromQuery('.todo-app', {
 			title: 'Todo',
 			width: 330,
 			height: 400,
 			x: 670,
-			y: 60
+			y: 40
 		});
 
 		var playerWin = wm.createWindow.fromQuery('.player-app', {
@@ -54,7 +47,7 @@
 			classname: 'player-window',
 			width: 635,
 			height: 300,
-			x: 490,
+			x: 450,
 			y: 320,
 			resizable: false,
 			opacity: 1 // To fix problems with chrome video on Linux
@@ -67,9 +60,26 @@
 			title: 'About Ventus',
 			width: 250,
 			height: 280,
-			x: 140,
-			y: 380
+			x: 90,
+			y: 345
 		});
+
+		var reqWin = wm.createWindow.fromQuery('.req-app', {
+			title: 'Requirement view',
+			width: 250,
+			height: 280,
+			x: 1080,
+			y: 40
+		});
+
+		var grpWin = wm.createWindow.fromQuery('.grp-app', {
+			title: 'Group',
+			width: 250,
+			height: 280,
+			x: 1050,
+			y: 345
+		});
+
 
 		// Hide loader when loaded
 		var loader = $("#loading-screen");
@@ -85,11 +95,12 @@
 				loader.hide();
 
 				// Open windows
-				openWithDelay(terminalWin, 0);
-				openWithDelay(todoWin, 200);
-				openWithDelay(aboutWin, 400);
-				openWithDelay(playerWin, 600);
-				openWithDelay(reqWin, 100);
+				openWithDelay(terminalWin, 20);
+				openWithDelay(todoWin, 20);
+				openWithDelay(aboutWin, 40);
+				openWithDelay(playerWin, 60);
+				openWithDelay(reqWin, 10);
+				openWithDelay(grpWin, 70);
 
 			});
 		}
@@ -110,7 +121,7 @@
 			} else {
 				init();
 			}
-		}, 300);
+		}, 100);
 
 
 		// Exposé test button
