@@ -64,6 +64,7 @@
 			y: 345
 		});
 
+		// requirement view 
 		var reqWin = wm.createWindow.fromQuery('.req-app', {
 			title: 'Requirement view',
 			width: 250,
@@ -72,12 +73,22 @@
 			y: 40
 		});
 
+		//group view
 		var grpWin = wm.createWindow.fromQuery('.grp-app', {
 			title: 'Group',
 			width: 250,
 			height: 280,
 			x: 1050,
 			y: 345
+		});
+
+		// group 2 view 
+		var grp2Win = wm.createWindow.fromQuery('.grp2-app', {
+			title: 'Group 2',
+			width: 250,
+			height: 280,
+			x: 150,
+			y: 45
 		});
 
 
@@ -100,7 +111,8 @@
 				openWithDelay(aboutWin, 40);
 				openWithDelay(playerWin, 60);
 				openWithDelay(reqWin, 10);
-				openWithDelay(grpWin, 70);
+				openWithDelay(grpWin, 0);
+				openWithDelay(grp2Win, 0);
 
 			});
 		}
