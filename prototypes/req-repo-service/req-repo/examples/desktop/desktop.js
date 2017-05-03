@@ -9,8 +9,8 @@
 		var terminalWin = wm.createWindow.fromQuery('.terminal-app', {
 			title: 'Terminal',
 			classname: 'terminal-window',
-			width: 550,
-			height: 300,
+			width: 350,
+			height: 200,
 			x: 50,
 			y: 40
 		});
@@ -22,7 +22,7 @@
 		var terminal = new Terminus('.terminal-app', {
 			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminus.js</h1> ' +
 				Terminus.version +
-				'</div>Copyright Req-Repo 2017, M<sup>ed</sup> Amine Bouzid.<br/>' +
+				'</div>Copyright Req-Repo 2017.<br/>' +
 				'Press <span style="color:green">&lt; tab &gt;</span> to see a list of available commands.'
 		});
 		terminal.shell.include([TestCommands, ShapeCommands]);
@@ -62,6 +62,7 @@
 			height: 220,
 			x: 90,
 			y: 345
+
 		});
 
 		// requirement view 
@@ -69,7 +70,7 @@
 			title: 'Requirement view',
 			width: 250,
 			height: 280,
-			x: 1080,
+			x: 943,
 			y: 40
 		});
 
@@ -78,8 +79,8 @@
 			title: 'Group',
 			width: 250,
 			height: 280,
-			x: 1050,
-			y: 345
+			x: 950,
+			y: 300
 		});
 
 		// group 2 view 
@@ -88,7 +89,7 @@
 			width: 250,
 			height: 280,
 			x: 350,
-			y: 345
+			y: 300
 		});
 
 

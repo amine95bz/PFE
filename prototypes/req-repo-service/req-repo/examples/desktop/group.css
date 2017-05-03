@@ -13,9 +13,9 @@
  */
 .container > div,
 .gu-mirror {
-  margin-bottom: 2px;
+  margin-bottom: 1px;
   padding: 15px;
-
+  
   background-color: #FFFDBC;
   transition: opacity 0.4s ease-in-out;
 }
@@ -42,18 +42,4 @@
   margin-right: 5px;
   background-color: rgba(0, 0, 0, 0.4);
   cursor: move;
-}
-.image-thing {
-  margin: 20px 0;
-  display: block;
-  text-align: center;
-}
-.slack-join {
-  position: absolute;
-  font-weight: normal;
-  font-size: 14px;
-  right: 10px;
-  top: 50%;
-  margin-top: -8px;
-  line-height: 16px;
 }

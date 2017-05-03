@@ -1,5 +1,17 @@
-<div class="req-app">
-<table align="center">
+<style>
+    td {
+        font-size: 10px; 
+    }
+
+    .champ{
+        border: 1px solid #A4A4A4;
+        border-radius: 5px ;
+        width:300px;
+    }
+    
+    </style>
+    
+        <table align="center">
         <tr>
         <td>
              UID 
@@ -67,7 +79,8 @@
         </div>  
 
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
              Categories 
 
         </td>
@@ -110,72 +123,114 @@
              Long Description 
         </td>
         <td>
+            
                 <textarea id="newCardLdescription" ng-model="Ldescription" class="champ" rows="1" placeholder="Requirement Long Description">
                 </textarea>
-        </td></tr>
+        </td>
+        </tr>
         </div>  
+
         <div class="form-group">
-            <tr><td>
+            <tr>
+            <td>
              Rationale 
-            </td><td>
+            </td>
+            <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Rationale" ng-model="Rationale" required
                        focus-me class="champ"/>
-            </td></tr>
+            </td>
+            </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>    
+        <tr>
+        <td>    
              Fitcriteria 
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Fitcriteria" ng-model="Fitcriteria" required
                    focus-me class="champ"/>
-        </td></tr>    
+        </td>
+        </tr>    
         </div>
+
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
              Satisfaction 
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Satisfaction" ng-model="Satisfaction" required
                        focus-me class="champ"/>
-        </td></tr>
+        </td>
+        </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
              Dissatisfaction 
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Dissatisfaction" ng-model="Dissatisfaction" required
                        focus-me class="champ"/>
-        </td></tr>
+        </td>
+        </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
             Documentation Links
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Documentation Links" ng-model="DocLink" required
                        focus-me class="champ"/>
-        </td></tr>
+        </td>
+        </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
            Related Requirements
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Related Requirements" ng-model="RelatedReq" required
                        focus-me class="champ"/>
-        </td></tr>
+        </td>
+        </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>    
+        <tr>
+        <td>    
            Sub Reqirements
-        </td><td>
+
+        </td>
+        <td>
                 <textarea id="newCardLdescription" ng-model="SubReq" class="champ" rows="1" placeholder="Sub Requirements">
                 </textarea>
-        </td></tr>
+        </td>
+        </tr>
         </div>
+
         <div class="form-group">
-        <tr><td>
+        <tr>
+        <td>
             Reviewed
-        </td><td>
+
+        </td>
+        <td>
                 <input type="text" id="newCarduid" placeholder="Requirement Reviewed" ng-model="Reviewed" required
                        focus-me class="champ"/>
-        </td></tr></div>
-</table>
-</div>
+        </td>
+        </tr>
+        </div>
+        </table>
+    </div>
