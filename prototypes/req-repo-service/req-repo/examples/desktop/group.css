@@ -1,7 +1,7 @@
 
 .container {
   display: table-cell;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #000;
   width: 50%;
 }
 .container:nth-child(odd) {
@@ -13,9 +13,10 @@
  */
 .container > div,
 .gu-mirror {
-  margin: 10px;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  margin-bottom: 2px;
+  padding: 15px;
+
+  background-color: #FFFDBC;
   transition: opacity 0.4s ease-in-out;
 }
 .container > div {
@@ -29,12 +30,9 @@
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
 }
-.container .ex-moved {
-  background-color: #e74c3c;
-}
-.container.ex-over {
-  background-color: rgba(255, 255, 255, 0.3);
-}
+
+
+
 #left-lovehandles > div,
 #right-lovehandles > div {
   cursor: initial;
