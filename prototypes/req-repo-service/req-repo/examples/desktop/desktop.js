@@ -1,4 +1,3 @@
-
 (function($, Ventus) {
 	document.addEventListener('DOMContentLoaded', function() {
 		var wm = new Ventus.WindowManager();
@@ -146,3 +145,4 @@
 		}, 1000)); 
 	});
 })($, Ventus);
+
