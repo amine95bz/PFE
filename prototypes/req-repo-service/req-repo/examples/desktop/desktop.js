@@ -57,9 +57,9 @@
 		playerWin.widget = true;*/
 
 		var aboutWin = wm.createWindow.fromQuery('.about-app', {
-			title: 'About Ventus',
-			width: 250,
-			height: 280,
+			title: 'About',
+			width: 160,
+			height: 220,
 			x: 90,
 			y: 345
 		});
@@ -135,7 +135,7 @@
 			} else {
 				init();
 			}
-		}, 100);
+		}, 500);
 
 	
 		// Exposé test button

@@ -179,7 +179,7 @@ Appear animation */
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  height: 26px;
+  height: 18px;
   min-height: 10px;
   background-color: #365d98;
   border: 0;
@@ -219,7 +219,7 @@ Appear animation */
   padding: 0;
   padding-left: 8px;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   color: #fff;
 }
