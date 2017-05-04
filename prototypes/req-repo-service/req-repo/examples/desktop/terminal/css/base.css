@@ -3,7 +3,7 @@
 }
 
 .terminusjs {
-	font-family: 'Ubuntu Mono', monospaced !important;
+	font-family: Arial, monospaced !important;
 	font-size: 15px;
 
 	width: 100%;
@@ -18,7 +18,7 @@
 }
 
 .terminusjs .identity {
-	font-family: 'Arvo', serif;
+	font-family: Arial ;
 	font-style: italic;
 	padding: 0 0 10px 0;
 	margin: 0;

@@ -20,7 +20,7 @@
 	background: none;
 	font-size: 100%;
 	vertical-align: baseline;
-	font-family: inherit;
+	font-family: arial;
 	color: inherit;
 	-webkit-appearance: none;
 	-moz-appearance: none;
@@ -63,7 +63,7 @@
 	margin: 0;
 	width: 100%;
 	font-size: 24px;
-	font-family: inherit;
+	font-family: arial;
 	line-height: 1.4em;
 	border: 0;
 	outline: none;
