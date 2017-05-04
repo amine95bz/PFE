@@ -111,29 +111,266 @@
             <!-- requirement view --> 
 
             <div class="req-app">
-            <iframe src="attribute.html"></iframe>     
+             <style>
+    .tab{
+        background-position: 100%;
+        font-family:arial;
+    }
+
+    td {
+        font-size: 14px; 
+        font-family: : arial;
+    }
+
+    .champ{
+        border: 1px solid #A4A4A4;
+        border-radius: 5px ;
+        width:300px;
+    }
+    
+    </style>
+    
+        <table align="center" class="tab">
+        <tr>
+        <td>
+             UID 
+        </td>
+        <td>   
+                <input type="text" id="newCarduid" placeholder="Requirement UID" ng-model="UID" required
+                       focus-me/ class="champ ">
+        </td>
+        </tr>  
+        
+            
+        </div>
+
+
+        <div class="form-group">
+        
+        <tr>
+        <td>
+             Type 
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Type" ng-model="Type" required
+                       focus-me class="champ "/>
+        </td>
+        </tr>
+        
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Abstraction level 
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Abstraction" ng-model="Abstractionlvl" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Origins 
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Origins" ng-model="Origins" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>  
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Creators 
+        </td>
+        <td>
+            
+                <input type="text" id="newCarduid" placeholder="Requirement Creators" ng-model="Creators" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>  
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Categories 
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Categories" ng-model="Categories" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>  
+
+        <div class="form-group">
+        <tr>
+        <td for="newCardTitle" >
+            Name 
+
+        </td>
+        <td>
+                <input type="text" id="newCardTitle" placeholder="Requirement Name" ng-model="title" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+            <tr>
+            <td>
+             Description 
+
+            </td>
+            <td>
+                <textarea id="newCardDescription" ng-model="description" class="champ" rows="1" placeholder="Requirement Description">
+                </textarea>
+            </td>
+            </tr>
+        </div>  
+
+        <div class="form-group">
+        <tr>
+        <td>    
+             Long Description 
+        </td>
+        <td>
+            
+                <textarea id="newCardLdescription" ng-model="Ldescription" class="champ" rows="1" placeholder="Requirement Long Description">
+                </textarea>
+        </td>
+        </tr>
+        </div>  
+
+        <div class="form-group">
+            <tr>
+            <td>
+             Rationale 
+            </td>
+            <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Rationale" ng-model="Rationale" required
+                       focus-me class="champ"/>
+            </td>
+            </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>    
+             Fitcriteria 
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Fitcriteria" ng-model="Fitcriteria" required
+                   focus-me class="champ"/>
+        </td>
+        </tr>    
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Satisfaction 
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Satisfaction" ng-model="Satisfaction" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+             Dissatisfaction 
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Dissatisfaction" ng-model="Dissatisfaction" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+            Documentation Links
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Documentation Links" ng-model="DocLink" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+           Related Requirements
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Related Requirements" ng-model="RelatedReq" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>    
+           Sub Reqirements
+
+        </td>
+        <td>
+                <textarea id="newCardLdescription" ng-model="SubReq" class="champ" rows="1" placeholder="Sub Requirements">
+                </textarea>
+        </td>
+        </tr>
+        </div>
+
+        <div class="form-group">
+        <tr>
+        <td>
+            Reviewed
+
+        </td>
+        <td>
+                <input type="text" id="newCarduid" placeholder="Requirement Reviewed" ng-model="Reviewed" required
+                       focus-me class="champ"/>
+        </td>
+        </tr>
+        </div>
+        </table>    
             </div>
 
 
             <!-- Database -->
 
     		<div class="db-app">
-                     <div id='left-rm-spill' class='container'>
-                    	
-                        <div>Anxious Cab Driver</div>
-                        <div>Thriving Venture</div>
-                        <div>Such</div>
-                        <div>Calm Clam</div>
-                    </div>
- 
-
-                    <div id='right-rm-spill' class='container'>
-                        <div>Banana Boat</div>
-                        <div>Orange Juice</div>
-                        <div>Cuban Cigar</div>
-                        <div>Terrible Comedian</div>
-                    </div>
-                    
+            	<table border="1px">
+  	<tr><td><b>UID</b></td><td><b>Name</b></td><td><b> Author</b></td><td><b>Link</b></td></tr>
+  	<tr><td> UI780</td><td> Requirement icon</td><td>Amine </td><td>Undef </td></tr>
+  	<tr><td> UI781</td><td> Requirement toolbox</td><td> Amine </td><td color=red>Undef </td></tr>
+  	<tr><td> UI782</td><td> Requirement workspace</td><td>Ramon </td><td> Click here </td></tr>
+  	<tr><td> UI784</td><td> Requirement views</td><td> Amine </td><td color=red>Undef </td></tr>
+  	<tr><td> UI785</td><td> Groups</td><td> Amine </td><td> </td></tr>
+  	<tr><td> UI788</td><td> Todo</td><td>Ramon </td><td> </td></tr>
+  	<tr><td> UI790</td><td> About</td><td> Amine</td><td> </td></tr>
+  	<tr><td> UI796</td><td> User interface</td><td> Amine </td><td color=red>Undef </td></tr>
+  	<tr><td> UI865</td><td> Admin Interface</td><td>Ramon </td><td color=red>Undef </td></tr>
+  	<tr><td> SK120</td><td> Contact</td><td>Amine </td><td color=red>Undef</td></tr>
+  		</table>                    
             </div> 
 
 
@@ -149,7 +386,7 @@
                         <div>Calm Clam</div>
                     </div>
                
-               <!-- <div>
+               		<!-- <div>
                     <button class="button create-button">Create Window</button>
                 	</div>   --> 
             </div>
