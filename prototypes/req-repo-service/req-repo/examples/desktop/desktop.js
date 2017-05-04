@@ -36,8 +36,8 @@
 
 		var todoWin = wm.createWindow.fromQuery('.todo-app', {
 			title: 'Todo',
-			width: 330,
-			height: 400,
+			width: 250,
+			height: 280,
 			x: 670,
 			y: 40
 		});
@@ -73,6 +73,16 @@
 			x: 943,
 			y: 40
 		});
+
+		// Database view 
+		var dbWin = wm.createWindow.fromQuery('.db-app', {
+			title: 'Database',
+			width: 250,
+			height: 280,
+			x: 620,
+			y: 40
+		});
+
 
 		//group view
 		var grpWin = wm.createWindow.fromQuery('.grp-app', {
@@ -116,6 +126,7 @@
 				openWithDelay(reqWin, 50);
 				openWithDelay(grpWin, 60);
 				openWithDelay(grp2Win, 70);
+				openWithDelay(dbWin, 80);
 
 			});
 		}
