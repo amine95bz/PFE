@@ -56,24 +56,22 @@
 		/*playerWin.titlebar = false;
 		playerWin.widget = true;*/
 
-		// about
-		var aboutWin = wm.createWindow.fromQuery('.about-app', {
-			title: 'About',
-			width: 160,
-			height: 220,
+
+		var graphWin = wm.createWindow.fromQuery('.graph-app', {
+			title: 'Graph Result',
+			width: 250,
+			height: 280,
 			x: 90,
 			y: 345
 
 		});
 
-		//graph 
-
-		var graphWin = wm.createWindow.fromQuery('.graph-app', {
-			title: 'Graph',
-			width: 300,
-			height: 250,
-			x: 600,
-			y: 34
+		var aboutWin = wm.createWindow.fromQuery('.about-app', {
+			title: 'About',
+			width: 160,
+			height: 220,
+			x: 300,
+			y: 45
 
 		});
 
@@ -134,13 +132,13 @@
 				//openWithDelay(todoWin, 20);
 				openWithDelay(aboutWin, 30);
 				//to display the video window
-				openWithDelay(playerWin, 40);
+				//openWithDelay(playerWin, 40);
 				openWithDelay(reqWin, 50);
 				openWithDelay(grpWin, 60);
 				openWithDelay(grp2Win, 70);
-				// display database window 
-				//openWithDelay(dbWin, 80);
-				openWithDelay(graphWin, 20);
+				openWithDelay(dbWin, 80);
+				openWithDelay(graphWin, 80);
+
 
 			});
 		}
