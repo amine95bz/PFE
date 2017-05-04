@@ -25,7 +25,7 @@ define(['underscore'], function(_) {
 
 				return false;
 			}, 1000));
-		
+		},
 
 		// Launch when plugin is enabled
 		plug: function() {

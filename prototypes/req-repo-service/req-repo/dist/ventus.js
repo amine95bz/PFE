@@ -2268,7 +2268,7 @@ define('ventus/wm/modes/expose', ['underscore'], function (_) {
         }
     };
     return ExposeMode;
-}); 
+});
 define('ventus/wm/modes/fullscreen', [], function () {
     'use strict';
     var FullscreenMode = {
