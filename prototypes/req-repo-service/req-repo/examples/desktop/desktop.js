@@ -56,12 +56,24 @@
 		/*playerWin.titlebar = false;
 		playerWin.widget = true;*/
 
+		// about
 		var aboutWin = wm.createWindow.fromQuery('.about-app', {
 			title: 'About',
 			width: 160,
 			height: 220,
 			x: 90,
 			y: 345
+
+		});
+
+		//graph 
+
+		var graphWin = wm.createWindow.fromQuery('.graph-app', {
+			title: 'Graph',
+			width: 300,
+			height: 250,
+			x: 600,
+			y: 34
 
 		});
 
@@ -126,7 +138,9 @@
 				openWithDelay(reqWin, 50);
 				openWithDelay(grpWin, 60);
 				openWithDelay(grp2Win, 70);
-				openWithDelay(dbWin, 80);
+				// display database window 
+				//openWithDelay(dbWin, 80);
+				openWithDelay(graphWin, 20);
 
 			});
 		}

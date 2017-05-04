@@ -1,10 +1,10 @@
 
 .container {
   display: table-cell;
-  background-color: #000;
+  background-color: #CDCDCB;
   width: 50%;
   font-size: 14px; 
-  font-family: arial;
+  font-family: serif;
 }
 .container:nth-child(odd) {
   background-color: rgba(0, 0, 0, 0.2);
