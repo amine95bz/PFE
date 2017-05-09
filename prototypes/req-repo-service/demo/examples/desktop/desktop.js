@@ -20,9 +20,9 @@
 		});
 
 		var terminal = new Terminus('.terminal-app', {
-			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminus.js</h1> ' +
+			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminal.js</h1> ' +
 				Terminus.version +
-				'</div>Copyright Ventus.<br/>' +
+				'</div>Copyright Req-Repo<br/>' +
 				'Press <span style="color:green">&lt; tab &gt;</span> to see a list of available commands.'
 		});
 		terminal.shell.include([TestCommands, ShapeCommands]);

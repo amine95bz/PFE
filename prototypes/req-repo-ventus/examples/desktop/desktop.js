@@ -20,9 +20,9 @@
 		});
 
 		var terminal = new Terminus('.terminal-app', {
-			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminus.js</h1> ' +
+			welcome: '<div class="identity"><img src="terminal/img/logo.png" /><h1>Terminal.js</h1> ' +
 				Terminus.version +
-				'</div>Copyright Ventus.<br/>' +
+				'</div>Copyright cc.<br/>' +
 				'Press <span style="color:green">&lt; tab &gt;</span> to see a list of available commands.'
 		});
 		terminal.shell.include([TestCommands, ShapeCommands]);
@@ -53,8 +53,6 @@
 			opacity: 1 // To fix problems with chrome video on Linux
 		});
 
-		/*playerWin.titlebar = false;
-		playerWin.widget = true;*/
 
 
 		var graphWin = wm.createWindow.fromQuery('.graph-app', {
@@ -82,6 +80,7 @@
 			height: 280,
 			x: 943,
 			y: 40
+			display: flex;
 		});
 
 		// Database view 
@@ -113,10 +112,10 @@
 		});
 
 
-		// Hide loader when loaded
+		// na7i loader when loaded
 		var loader = $("#loading-screen");
 
-		// For look & feel reasons
+		// for look and feel reasons
 		function openWithDelay(win, delay) {
 			setTimeout(function(){win.open();}, delay);
 		}
@@ -126,7 +125,7 @@
 			loader.on(Ventus.browser.animationEventName(), function() {
 				loader.hide();
 
-				// Open windows
+				// open views 
 				openWithDelay(terminalWin, 10);
 				//to display todo window 
 				//openWithDelay(todoWin, 20);
