@@ -28,11 +28,11 @@ define(function() {
 	});
 
 	requireTodo(['views/app','routers/router'], function(AppView, Workspace) {
-		// Initialize routing and start Backbone.history()
+		// initialize routing and start backbone.history()
 		new Workspace();
 		Backbone.history.start();
 
-		// Initialize the application view
+		// initialize the application view, reopen 
 		new AppView();
 	});
 });
