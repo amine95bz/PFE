@@ -1,13 +1,13 @@
   <!DOCTYPE html>
-<html>
-<head>
+  <html>
+  <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>New Post</title>
   
-  <style type="text/css" media="screen">
+    <style type="text/css" media="screen">
     body {font-family:verdana, sans-serif; color:#666; background:#fafafa; padding:20px; text-align:center;}
     #page {text-align:left; max-width:600px; margin:0 auto;} 
     h1 {font-size:16px; font-weight:normal; text-align:center;}
@@ -22,9 +22,9 @@
       label i {display:block; width:auto; text-align:left;}
       button {display:block; margin:0;}
     }
-  </style>
-  
-  <script type="text/javascript">
+    </style>
+   
+    <script type="text/javascript">
     // Current date - http://stackoverflow.com/a/4929629/412329
     var today = new Date();
     var dd = today.getDate();
@@ -43,15 +43,15 @@
 
 
     function saveFormAsTextFile()
-        // Based on https://thiscouldbebetter.wordpress.com/2012/12/18/loading-editing-and-saving-a-text-file-in-html5-using-javascrip/
+        // Designed for Req-Repo
         {
         var textToSave =
           '---\n'+
           'Requirement UID: ' + document.getElementById('uid').value + '\n' + // =req uid
           'Type: ' + document.getElementById('type').value + '\n' + // = type
           'Abstraction level: ' + document.getElementById('abs').value + '\n' + // = type
-          'Origins: ' +document.getElementById('origins').value + '\n' +
-          'Author: ' +document.getElementById('author').value + '\n' +
+          'Origins: ' +document.getElementById('origins').value + '\n' +// =origins
+          'Author: ' +document.getElementById('author').value + '\n' + // author or creator
           'Categories: ' +document.getElementById('cat').value + '\n' +
           'Name: ' +document.getElementById('nom').value + '\n' +
           'Description: ' +document.getElementById('desc').value + '\n' +
@@ -66,7 +66,8 @@
           'Reviewed: ' +document.getElementById('rev').value + '\n' +
 
           
-          'date: ' + today + '\n' + // =date - automatically puts today's date
+          'date: ' + today + '\n' + // =date - automatically puts today's date 
+          // automatically set
          
           '---\n' + '\n' + 
           document.getElementById('content').value // =content;
@@ -90,7 +91,7 @@
         {
         document.body.removeChild(event.target);
         }
-  </script>
+    </script>
 </head>
 
 <body>
@@ -189,7 +190,7 @@
 
     <br>
     
-    <label for="content">
+    <p><label for="content">
     <i>Content</i>  <!-- =content textarea example -->
     <textarea id="content" cols="40" rows="1" placeholder="Write something."></textarea>
     </label>
