@@ -1,6 +1,7 @@
 /**
- * Terminus.js example commands
- * Copyright © 2012 Ramón Lamana
+ * Terminal.JS 
+ * Copyright © 2017 Req-Repo 
+ * Med Amine Bouzid
  */
 (function(global) {
 

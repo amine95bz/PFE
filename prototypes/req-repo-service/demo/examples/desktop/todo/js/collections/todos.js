@@ -1,3 +1,8 @@
+/**
+ * Terminal.JS 
+ * Copyright © 2017 Req-Repo 
+ * Med Amine Bouzid
+ */
 define([
 	'underscore',
 	'backbone',

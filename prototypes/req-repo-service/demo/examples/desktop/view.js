@@ -1,4 +1,8 @@
-
+/**
+ * Terminal.JS 
+ * Copyright © 2017 Req-Repo 
+ * Med Amine Bouzid
+ */
 $(document).ready(function() {
 				var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
 				var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);

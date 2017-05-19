@@ -1,4 +1,8 @@
-
+/**
+ * Terminal.JS 
+ * Copyright © 2017 Req-Repo 
+ * Med Amine Bouzid
+ */
 (function($, Ventus) {
 	document.addEventListener('DOMContentLoaded', function() {
 		var wm = new Ventus.WindowManager();
@@ -127,17 +131,17 @@
 				loader.hide();
 
 				// Open windows
-				openWithDelay(terminalWin, 10);
+				//openWithDelay(terminalWin, 10);
 				//to display todo window 
-				openWithDelay(todoWin, 20);
-				openWithDelay(aboutWin, 30);
+				//openWithDelay(todoWin, 20);
+				//openWithDelay(aboutWin, 30);
 				//to display the video window
-				openWithDelay(playerWin, 40);
+				//openWithDelay(playerWin, 40);
 				openWithDelay(reqWin, 50);
-				openWithDelay(grpWin, 60);
-				openWithDelay(grp2Win, 70);
-				openWithDelay(dbWin, 80);
-				openWithDelay(graphWin, 80);
+				//openWithDelay(grpWin, 60);
+				//openWithDelay(grp2Win, 70);
+				//openWithDelay(dbWin, 80);
+				//openWithDelay(graphWin, 80);
 
 
 			});
