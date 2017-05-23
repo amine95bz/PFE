@@ -25,7 +25,7 @@
     </style>
    
     <script type="text/javascript">
-    // Current date - http://stackoverflow.com/a/4929629/412329
+    // Current date - http:
     var today = new Date();
     var dd = today.getDate();
     var mm = today.getMonth()+1; //January is 0!
@@ -91,6 +91,21 @@
         {
         document.body.removeChild(event.target);
         }
+
+
+       function loadFileAsText()
+{
+    var fileToLoad = document.getElementById("fileToLoad").files[0];
+ 
+    var fileReader = new FileReader();
+    fileReader.onload = function(fileLoadedEvent) 
+    {
+        var textFromFileLoaded = fileLoadedEvent.target.result;
+        document.getElementById(/*"uid"*/).value = textFromFileLoaded;
+    };
+    fileReader.readAsText(fileToLoad, "UTF-8");
+}
+
     </script>
 </head>
 
@@ -202,9 +217,17 @@
       <input id="filename" value="" size="40" placeholder="title.md">
     </label>
     
-    <button onclick="saveFormAsTextFile()">
+    <label for="sav">  
+      <button onclick="saveFormAsTextFile()">
       Save to File
     </button>
+    </label>
+        <i>Select a File to Load:</i>
+        <i><input type="file" id="fileToLoad"></i>
+        <button onclick="loadFileAsText()">Load Selected File</button><td>
+    <label>
+      
+    </label>
     
   </div>
 </body>
